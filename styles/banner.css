@@ -1,0 +1,42 @@
+.banner
+{
+    background: var(--azul-degrade);
+    color: var(--branco);
+    text-align: center;
+    padding: 2.5rem 2rem;
+}
+
+.banner__titulo
+{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.banner__texto
+{
+    font-weight: 500;
+    padding: 1rem 0;
+}
+
+.banner__pesquisa
+{
+     /*Quando você define uma fonte no body, essa definição não atinge as propriedades dos elementos filhos, sempre lembre de setar isso no seletor do elemento.*/
+    border-radius: 30px;
+    border-color: var(--branco);
+    background-color: transparent; /*Ler documentação*/
+    -webkit-text-fill-color: var(--branco);
+    border: 1px solid var(--branco);
+    padding: 1rem; /*Lembre-se: padding é o poder, use o padding para controlar o espaçamento ao invés de margin*/
+    width: 100%;
+    text-align: center;
+}
+
+.banner__pesquisa::placeholder
+{
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 14px;
+    background: url("../assets/Pesquisa.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+}

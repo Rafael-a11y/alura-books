@@ -1,0 +1,36 @@
+.topicos
+{
+    background: var(--azul-degrade);
+    text-align: center;
+    padding: 1.5rem 0;
+}
+.topicos__titulo
+{
+    color: var(--branco);
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+.topicos__lista
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* gap: 1rem; */
+}
+
+.topicos__item
+{
+    padding: 1rem; /*A Mônica definiu padding em .topicos__link*/ 
+    background-color: var(--laranja);
+    margin: 0.5rem;
+}
+
+.topicos__link
+{
+    text-decoration: none;
+    color: var(--branco);
+    font-size: 14px;
+    font-weight: 700;
+}
+

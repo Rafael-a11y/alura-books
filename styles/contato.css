@@ -1,0 +1,49 @@
+.contato
+{
+    padding: 1rem;
+    /* border-bottom: 1px solid var(--azul); */
+    background-color: var(--branco);
+}
+
+.contato__titulo,.contato__texto
+{
+    background: var(--azul-degrade); /*Define a cor de fundo do elemento como azul degradê, ler a documentação*/
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; /*Define a cor de fundo como a cor do elemento, as propriedades acima são apenas para assegurar que essas configurações serão implementadas idependente do navegador utilizado*/
+}
+
+.contato__titulo
+{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.contato__texto
+{
+    font-weight: 300;
+    margin: 1rem 0;
+}
+
+.contato__email
+{
+    border-radius: 30px;
+    width: 90%;
+    padding: 1rem;
+    border: 1px solid var(--azul);
+    text-align: left;
+    color: var(--azul); /*Vale para quando for inserido texto no campo*/
+    /* margin: 2rem 0; */
+}
+
+.contato__email::placeholder
+{
+    
+    text-align: left;
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+    background: url("../assets/Email.svg") no-repeat;
+    padding-left: 2rem;
+    color: var(--azul);
+}
