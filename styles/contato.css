@@ -7,10 +7,10 @@
 
 .contato__titulo,.contato__texto
 {
-    background: var(--azul-degrade); /*Define a cor de fundo do elemento como azul degradê, ler a documentação*/
+    background: var(--azul-degrade); /*Define a cor de fundo do elemento como azul degradê, azul degrade é um gradiente linear, por isso o uso da propriedade backgound*/
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-clip: text; /*Define a cor de fundo como a cor do elemento, as propriedades acima são apenas para assegurar que essas configurações serão implementadas idependente do navegador utilizado*/
+    background-clip: text; /*Define a cor de fundo como a cor do elemento, as propriedades acima são apenas para assegurar que essas configurações serão implementadas idependente do navegador utilizado. Essa estratégia de coloração de fonte é usada quando se deseja usar um linear gradiente como cor da fonte, não existe uma propriedade para isso, então a estratégia é definir a cor da fonte como a cor do fundo que por sua vez suporta gradiente linear.*/
 }
 
 .contato__titulo
