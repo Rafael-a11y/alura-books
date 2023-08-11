@@ -33,6 +33,11 @@
     padding: 1rem;
 }
 
+.container__titulo
+{
+    display: none;
+}
+
 .container__lista-menu
 {
     display: none;
@@ -68,3 +73,49 @@
     -webkit-text-fill-color: transparent;   
     color: black; /*Caso a propriedade -webkit-texto-fill-color não seja suportada*/
 }
+
+/* 428px para celular
+1024px para tablet
+1728px para computador
+MAX para quando a tela principal é desktop
+MIN para quando a tela principal for celular*/
+@media screen and (min-width:1024px)
+{
+
+    .container__titulo
+    {
+        font-family: var(--fonte-secundaria);
+        font-size: 30px;
+    }
+
+    .container__titulo
+    {
+        font-weight: 400;
+        display: block;
+        
+    }
+
+    .container__titulo--negrito
+    {
+        font-weight: 700;
+    }
+
+    .opcoes
+    {
+        display: flex;
+    }
+
+    .opcoes__item
+    {
+        padding: 0 1rem;
+        text-transform: uppercase;
+    }
+
+    .opcoes__link
+    {
+        text-decoration: none;
+        color: var(--preto);
+    }
+}
+
+/* @media screen and (min-width:1024px) and (orientation: landscape) */
