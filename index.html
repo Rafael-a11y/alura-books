@@ -38,10 +38,37 @@
                 </li>
             </ul>
             <img src="./assets/Logo.svg" alt="Logo da AluraBooks" class="container__imagem">
-            <h1 class="container__titulo"><b class="container__titulo--negrito">Alura</b>Books</h1>
+            <h1 class="container__titulo">
+                <b class="container__titulo__negrito">Alura</b>Books
+            </h1>
         </div>
+
+
+
         <ul class="opcoes">
-            <li class="opcoes__item">Categorias</li>
+            <input type="checkbox" id="opcoes__menu" class="opcoes__botao">
+            <label for="opcoes__menu">
+                <li class="opcoes__item">Categorias</li>
+            </label>
+            <!-- Quando quiser inserir uma lista em uma outra lista, não precisa pôr a lista interna dentro de um <li> -->
+            <ul class="container__lista-menu">
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Programação</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Front-end</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Infraestrutura</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Business</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Design e UX</a>
+                </li>
+            </ul>
+
             <li class="opcoes__item">
                 <a href="#" class="opcoes__link">Favoritos</a>
             </li>
@@ -49,8 +76,11 @@
                 <a href="#" class="opcoes__link">Minha Estante</a>
             </li>
         </ul>
+
+
+
         <div class="cabecalho__container">
-            <a href="#"><img src="./assets/Favoritos.svg" alt="Meus favoritos" class="container__imagem"></a>
+            <a href="#"><img src="./assets/Favoritos.svg" alt="Meus favoritos" class="container__imagem container__imagem-transparente "></a>
             <a href="#"><img src="./assets/Sacola.svg" alt="Sacola de compras" class="container__imagem"></a>
             <a href="#"><img src="./assets/Usuario.svg" alt="Meu perfil" class="container__imagem"></a>
         </div>

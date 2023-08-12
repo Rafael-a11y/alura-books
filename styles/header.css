@@ -74,6 +74,16 @@
     color: black; /*Caso a propriedade -webkit-texto-fill-color não seja suportada*/
 }
 
+.opcoes
+{
+    display: none;
+}
+
+.opcoes__botao
+{
+    display: none;
+}
+
 /* 428px para celular
 1024px para tablet
 1728px para computador
@@ -82,7 +92,17 @@ MIN para quando a tela principal for celular*/
 @media screen and (min-width:1024px)
 {
 
-    .container__titulo
+    .container__botao:checked~.container__lista-menu
+    {
+    display:none;
+    }
+
+    .cabecalho__menu-hamburguer
+    {
+        display: none;
+    }
+
+    .container__titulo,.container__titulo__negrito
     {
         font-family: var(--fonte-secundaria);
         font-size: 30px;
@@ -95,7 +115,7 @@ MIN para quando a tela principal for celular*/
         
     }
 
-    .container__titulo--negrito
+    .container__titulo__negrito
     {
         font-weight: 700;
     }
@@ -111,10 +131,33 @@ MIN para quando a tela principal for celular*/
         text-transform: uppercase;
     }
 
+    .opcoes__botao:checked~.container__lista-menu
+    {
+        display: block;
+        width: auto;
+    }
+
+    /* .opcoes__botao:checked~label>li
+    {   
+        padding: 1rem 1rem;
+        background-color: var(--azul);
+    } */
+
+    .opcoes__botao:checked~.container__lista-menu > .lista-menu__item:hover
+    {
+        font-weight: 700;
+        background-color: var(--azul);
+    }
+
     .opcoes__link
     {
         text-decoration: none;
         color: var(--preto);
+    }
+
+    .container__imagem-transparente
+    {
+        display: none;
     }
 }
 
