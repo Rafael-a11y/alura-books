@@ -94,7 +94,7 @@ MIN para quando a tela principal for celular*/
 
     .container__botao:checked~.container__lista-menu
     {
-    display:none;
+        display:none;
     }
 
     .cabecalho__menu-hamburguer
@@ -165,5 +165,22 @@ MIN para quando a tela principal for celular*/
 
 @media screen and (min-width:1728px)
 {
-    
+    .opcoes
+    {
+       margin-right: auto;
+       margin-left: 3rem;
+    }
+
+    .cabecalho__container__link
+    {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--preto);
+    }
+
+    .container__imagem-link::before
+    {
+        content: "Meu perfil";
+    }
 }
