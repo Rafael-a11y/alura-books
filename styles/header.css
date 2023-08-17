@@ -162,3 +162,8 @@ MIN para quando a tela principal for celular*/
 }
 
 /* @media screen and (min-width:1024px) and (orientation: landscape) */
+
+@media screen and (min-width:1728px)
+{
+    
+}
