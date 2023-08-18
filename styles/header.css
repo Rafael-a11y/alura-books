@@ -84,6 +84,11 @@
     display: none;
 }
 
+.container__texto
+{
+    display: none;
+}
+
 /* 428px para celular
 1024px para tablet
 1728px para computador
@@ -165,10 +170,15 @@ MIN para quando a tela principal for celular*/
 
 @media screen and (min-width:1728px)
 {
+
+    .cabecalho__container
+    {
+        padding: 0 2rem;
+    }
+
     .opcoes
     {
-       margin-right: auto;
-       margin-left: 3rem;
+        margin-right: autos;
     }
 
     .cabecalho__container__link
@@ -179,8 +189,20 @@ MIN para quando a tela principal for celular*/
         color: var(--preto);
     }
 
-    .container__imagem-link::before
+    .container__texto
     {
-        content: "Meu perfil";
+        display: block;
     }
+
+
+    /* .cabecalho__container__link[data-rotulo$="sacola" i]::after
+    {
+        content: "Minha Sacola";
+    }
+
+    .cabecalho__container__link[data-rotulo$="usuário" i]::after
+    {
+        content: "Meu Usuário";
+        padding-right: 1rem;
+    } */
 }

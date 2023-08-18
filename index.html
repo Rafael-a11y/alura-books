@@ -80,9 +80,19 @@
 
 
         <div class="cabecalho__container">
-            <a href="#" class="cabecalho__container__link"><img src="./assets/Favoritos.svg" alt="Meus favoritos" class="container__imagem container__imagem-transparente "></a>
-            <a href="#" class="cabecalho__container__link"><img src="./assets/Sacola.svg" alt="Sacola de compras" class="container__imagem container__imagem-link"></a>
-            <a href="#" class="cabecalho__container__link"><img src="./assets/Usuario.svg" alt="Meu perfil" class="container__imagem container__imagem-link"></a>
+            <a href="#" class="cabecalho__container__link">
+                <img src="./assets/Favoritos.svg" alt="Meus favoritos" class="container__imagem container__imagem-transparente">
+            </a>
+
+            <a href="#" class="cabecalho__container__link" data-rotulo="Minha Sacola">
+                <img src="./assets/Sacola.svg" alt="Sacola de compras" class="container__imagem">
+                <p class="container__texto">Sacola de Compras</p>
+            </a>
+
+            <a href="#" class="cabecalho__container__link" data-rotulo="Meu Usuário">
+                <img src="./assets/Usuario.svg" alt="Meu perfil" class="container__imagem">
+                <p class="container__texto">Meu Usuário</p>
+            </a>
         </div>
     </header>
     <main>
@@ -91,6 +101,7 @@
             <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
             <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
         </section>
+
         <section class="carrossel">
             <h2 class="carrossel__titulo">Últimos Lançamentos</h2>
             <!-- Contâiner de slider principal -->
