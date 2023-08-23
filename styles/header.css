@@ -8,7 +8,9 @@
     display: inline-block;
 }
 
-.cabecalho 
+
+
+.cabecalho
 {
     background-color: var(--branco);
     display: flex;
@@ -49,7 +51,16 @@
 .container__botao:checked~.container__lista-menu
 {
     display:block;
-    
+}
+
+.container__botao:checked~label .cabecalho__menu-hamburguer
+{
+    background-image: url("../assets/MenuMenu.svg");
+}
+
+.container__botao:checked~label
+{
+    background: var(--azul-degrade)
 }
 
 .lista-menu__item,.lista-menu__titulo
@@ -70,7 +81,7 @@
     background: var(--azul-degrade);
     background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;   
+    -webkit-text-fill-color: transparent;
     color: black; /*Caso a propriedade -webkit-texto-fill-color não seja suportada*/
 }
 
@@ -117,7 +128,7 @@ MIN para quando a tela principal for celular*/
     {
         font-weight: 400;
         display: block;
-        
+
     }
 
     .container__titulo__negrito
@@ -136,17 +147,25 @@ MIN para quando a tela principal for celular*/
         text-transform: uppercase;
     }
 
+    .opcoes__botao:checked~label>.opcoes__item
+    {
+        background-color: var(--azul);
+        padding: 1rem 1rem;
+        color: var(--branco);
+    }
+
+    .opcoes__botao:checked~.opcoes__item
+    {
+        padding: 1rem 1rem;
+    }
+
     .opcoes__botao:checked~.container__lista-menu
     {
         display: block;
         width: auto;
+        top: 83%;
+       
     }
-
-    /* .opcoes__botao:checked~label>li
-    {   
-        padding: 1rem 1rem;
-        background-color: var(--azul);
-    } */
 
     .opcoes__botao:checked~.container__lista-menu >.lista-menu__item:hover
     {
@@ -164,8 +183,8 @@ MIN para quando a tela principal for celular*/
     {
         display: none;
     }
-}
 
+}
 /* @media screen and (min-width:1024px) and (orientation: landscape) */
 
 @media screen and (min-width:1728px)
@@ -178,8 +197,10 @@ MIN para quando a tela principal for celular*/
 
     .opcoes
     {
-        margin-right: autos;
+        margin-right: auto;
     }
+
+
 
     .cabecalho__container__link
     {

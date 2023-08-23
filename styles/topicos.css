@@ -52,3 +52,12 @@
         font-size: 1.5rem;
     }
 }
+
+@media screen and (min-width:1728px)
+{
+    .topicos
+    {
+        /* Use margin para criar espaçamento, mas se houver cor de fundo ou qualquer outra propriedade definida que conflite com o margin, use em segunda opção o padding */
+        padding: 3rem 30vw;
+    }
+}

@@ -62,3 +62,18 @@ hr
         margin-left: 0.6rem;
     }
 }
+
+@media screen and (min-width:1728px)
+{
+
+    .rodape
+    {
+        padding: 3rem 0;
+    }
+
+    .rodape__lista
+    {
+        padding-left: 2rem;
+        border-left: 1px solid var(--cinza-claro);
+    }
+}

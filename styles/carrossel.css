@@ -24,7 +24,7 @@
     margin: 0.5rem 0;
 }
 
-.card 
+.card
 {
     border-radius: 10px;
     background: #FFF;
@@ -71,7 +71,7 @@
     justify-content: space-between;
 }
 
-.botoes 
+.botoes
 {
     display: flex;
     align-items: center;
@@ -127,5 +127,67 @@
 
 @media screen and (min-width:1728px)
 {
-    
+
+    .carrossel__titulo
+    {
+        font-size: 36px;
+    }
+
+    .carrossel__container
+    {
+        display: flex;
+        margin: 0 20vw 3rem 20vw; /*Ao usar margin, os elementos já são dimensionados automaticamente, isso inclui suas larguras e alturas*/
+        align-items: center;
+        
+        /* justify-content: center; A maneira como eu solucionei este layout
+        align-items: center;
+        padding-bottom: 6rem;
+        column-gap: 3rem; */
+
+    }
+
+    .carrossel__container >.swiper
+    {
+        /* height: min-content;
+        width: 30%;
+        margin: 0; */
+    }
+
+    .swiper-pagination
+    {
+        margin: 1rem 0;
+    }
+
+    .swiper
+    {
+        width: 50%;
+    }
+
+    .card
+    {
+        width: 60%;
+        margin-left: 3rem;
+    }
+
+    .descricao
+    {
+        margin-right: 2rem;
+    }
+
+    .descricao__titulo
+    {
+        font-size: 36px;
+    }
+
+    .descricao__texto
+    {
+        font-size: 16px;
+    }
+
+
+    /* .card
+    {
+        align-self: flex-end;
+    } */
+
 }
