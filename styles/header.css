@@ -1,3 +1,8 @@
+a:active
+{
+    -webkit-text-fill-color: orange;
+}
+
 .cabecalho__menu-hamburguer
 {
     width: 40px;
@@ -60,7 +65,8 @@
 
 .container__botao:checked~label
 {
-    background: var(--azul-degrade)
+    background-color: var(--azul);
+    /* background: var(--azul-degrade); */
 }
 
 .lista-menu__item,.lista-menu__titulo
@@ -78,10 +84,10 @@
 
 .lista-menu__link
 {
-    background: var(--azul-degrade);
+    background: var(--azul-degrade); /*Define a cor de fundo do link*/
     background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text; /*A cor de fundo aparece apenas nas áreas preenchidas pelo texto*/
+    -webkit-text-fill-color: transparent; /*Deixa transparente a cor do texto, assim a cor de background vai aparecer como a cor do texto*/
     color: black; /*Caso a propriedade -webkit-texto-fill-color não seja suportada*/
 }
 
@@ -149,28 +155,32 @@ MIN para quando a tela principal for celular*/
 
     .opcoes__botao:checked~label>.opcoes__item
     {
-        background-color: var(--azul);
-        padding: 1rem 1rem;
+        background: var(--azul-degrade);
         color: var(--branco);
     }
 
-    .opcoes__botao:checked~.opcoes__item
+    .opcoes__item
     {
-        padding: 1rem 1rem;
+        padding: 2rem 1rem;
     }
 
     .opcoes__botao:checked~.container__lista-menu
     {
         display: block;
         width: auto;
-        top: 83%;
        
     }
 
-    .opcoes__botao:checked~.container__lista-menu >.lista-menu__item:hover
+    .lista-menu__item:hover
     {
+        background: var(--azul-degrade);
+    }
+
+    .lista-menu__item:hover>.lista-menu__link
+    {
+        -webkit-text-fill-color: var(--branco);
         font-weight: 700;
-        background-color: var(--azul);
+        text-decoration: none;
     }
 
     .opcoes__link
